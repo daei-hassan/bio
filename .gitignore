@@ -2,7 +2,5 @@ _site/
 .DS_Store
 __pycache__/
 
-# The author's recording and everything made from it stays on this computer.
+# The author's recording stays on this computer.
 docs/voice/
-audiobook/work/
-audiobook/.venv/
