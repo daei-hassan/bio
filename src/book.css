@@ -14,6 +14,21 @@
   src: url(fonts/noto-naskh-arabic-latin.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+/* English and Portuguese */
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url(fonts/source-serif-4-latin.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: italic;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url(fonts/source-serif-4-latin-italic.woff2) format("woff2");
+}
 
 :root {
   --desk: #e7e0d2;
@@ -103,6 +118,7 @@ a:hover { color: var(--accent); }
 .cover .subtitle { margin: 0; font-size: 1.15rem; }
 .cover .years { margin: 0; color: var(--muted); }
 .cover .author { margin: 4.5rem 0 0; font-size: 1.3rem; font-weight: 600; }
+.cover .note { margin: .4rem 0 0; color: var(--muted); font-size: .9rem; }
 .cover .actions {
   display: flex;
   flex-wrap: wrap;
@@ -121,6 +137,27 @@ a:hover { color: var(--accent); }
   background: var(--accent);
   border-color: var(--accent);
   color: var(--paper);
+}
+
+/* Links to the same page in the other languages */
+.langs { display: flex; justify-content: center; gap: 1.1rem; }
+.langs [aria-current] { color: var(--accent); }
+.cover .langs :lang(fa) { font-family: "Noto Naskh Arabic", "Geeza Pro", serif; }
+.cover .langs :lang(en), .cover .langs :lang(pt) { font-family: "Source Serif 4", Georgia, serif; }
+.cover .langs { margin-top: 1.4rem; color: var(--muted); font-size: .9rem; }
+.running-head .langs {
+  gap: .7rem;
+  margin-inline: auto 1.1rem;
+  letter-spacing: .04em;
+}
+.running-head .langs, .running-head .contents { flex: none; }
+.running-head .contents summary { white-space: nowrap; }
+.running-head > a {
+  min-width: 0;
+  margin-inline-end: 1rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .dedication {
@@ -270,4 +307,31 @@ a:hover { color: var(--accent); }
   .toc ol { padding-inline-start: 1rem; }
   .opener { margin: 3rem 0 2.5rem; }
   .opener h1 { font-size: 2.2rem; }
+}
+
+/* English and Portuguese: a Latin book face, tighter leading and real italics.
+   Everything above was tuned for Persian set in Naskh. */
+:root:not(:lang(fa)) body {
+  /* Noto Naskh is there for the odd Persian word or letter quoted in a translation. */
+  font-family: "Source Serif 4", "Noto Naskh Arabic", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  line-height: 1.7;
+}
+:root:not(:lang(fa)) .cover h1 { font-size: 2.9rem; line-height: 1.2; }
+:root:not(:lang(fa)) .cover .actions a { padding: .3rem 1.2rem; }
+:root:not(:lang(fa)) .cover .note { font-style: italic; }
+:root:not(:lang(fa)) .toc > li > a { flex-wrap: wrap; }
+:root:not(:lang(fa)) .toc ol { line-height: 1.75; }
+:root:not(:lang(fa)) .contents > ol { line-height: 1.6; }
+:root:not(:lang(fa)) .contents > ol > li { margin-block: .35rem; }
+:root:not(:lang(fa)) .contents li ol { line-height: 1.55; }
+:root:not(:lang(fa)) .opener h1 { font-size: 2.3rem; line-height: 1.25; }
+:root:not(:lang(fa)) .prose p { hyphens: auto; -webkit-hyphens: auto; }
+:root:not(:lang(fa)) .prose h2 { line-height: 1.4; }
+:root:not(:lang(fa)) .prose em,
+:root:not(:lang(fa)) .dedication em,
+:root:not(:lang(fa)) .prose p.verse { font-style: italic; }
+:root:not(:lang(fa)) .prose p.verse em { font-style: normal; }
+@media (max-width: 700px) {
+  :root:not(:lang(fa)) .cover h1 { font-size: 2.2rem; }
+  :root:not(:lang(fa)) .opener h1 { font-size: 1.9rem; }
 }

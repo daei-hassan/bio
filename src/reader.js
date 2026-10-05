@@ -1,6 +1,8 @@
-// Remembers the chapter and scroll position last read, in this browser only.
+// Remembers the chapter and scroll position last read, in this browser only,
+// separately for each language.
 (function () {
-  var KEY = "zendegi-nameh-last";
+  var lang = document.documentElement.lang;
+  var KEY = "zendegi-nameh-last" + (lang === "fa" ? "" : "-" + lang);
 
   function read() {
     try { return JSON.parse(localStorage.getItem(KEY)) || null; } catch (e) { return null; }
@@ -38,8 +40,8 @@
     var saved = read();
     var start = document.getElementById("start");
     if (saved && saved.chapter && start) {
-      start.href = "fasl-" + saved.chapter + ".html#edame";
-      start.textContent = "ادامه‌ی مطالعه: " + saved.title;
+      start.href = start.dataset.prefix + "-" + saved.chapter + ".html#edame";
+      start.textContent = start.dataset.resume + ": " + saved.title;
     }
   }
 })();
