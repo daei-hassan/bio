@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the book site from docs/zendegi-nameh-final.md into _site/.
+"""Build the book site from docs/text/zendegi-nameh-final.md into _site/.
 
 Standard library only:  python3 build.py
 """
@@ -11,8 +11,8 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-SOURCE = ROOT / "docs" / "zendegi-nameh-final.md"
-PDF = ROOT / "docs" / "zendegi-nameh-final.pdf"
+SOURCE = ROOT / "docs" / "text" / "zendegi-nameh-final.md"
+PDF = ROOT / "docs" / "text" / "zendegi-nameh-final.pdf"
 SRC = ROOT / "src"
 OUT = ROOT / "_site"
 

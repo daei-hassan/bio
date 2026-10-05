@@ -12,8 +12,8 @@ The site has two versions of the book:
 
 | Path | What it is |
 |---|---|
-| `docs/zendegi-nameh-final.md` | The text. This is the source for the reading version. |
-| `docs/zendegi-nameh-final.pdf` | The printed book. Source for the page-turning version and the download. |
+| `docs/text/zendegi-nameh-final.md` | The text. This is the source for the reading version. |
+| `docs/text/zendegi-nameh-final.pdf` | The printed book. Source for the page-turning version and the download. |
 | `src/` | Stylesheet, scripts, typeface and the page images. |
 | `build.py` | Builds the site into `_site/` (not committed). |
 | `tools/render_pages.sh` | Re-creates the page images from the PDF. |
@@ -21,7 +21,7 @@ The site has two versions of the book:
 
 ## Fixing the text
 
-Edit `docs/zendegi-nameh-final.md` and push to `main`. The site rebuilds itself in
+Edit `docs/text/zendegi-nameh-final.md` and push to `main`. The site rebuilds itself in
 about a minute. You can do this from the GitHub website without any tools.
 
 The build understands only what the file uses today:
@@ -39,7 +39,7 @@ changes. They come from the PDF.
 
 ## Replacing the PDF
 
-1. Replace `docs/zendegi-nameh-final.pdf`.
+1. Replace `docs/text/zendegi-nameh-final.pdf`.
 2. Run `tools/render_pages.sh` (needs `brew install poppler webp`).
 3. If the page count or the pages chapters start on have changed, update
    `PAGE_COUNT` and `CHAPTER_PAGES` at the top of `build.py`.
