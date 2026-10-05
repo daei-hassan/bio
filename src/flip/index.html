@@ -33,13 +33,13 @@
     --h: calc(100vh - 5.2rem);
     --h: calc(100dvh - 5.2rem);
     flex: none;
-    width: clamp(600px, min(100vw - 24px, var(--h) * 1.4138), 2600px);
+    width: clamp(600px, min(100vw - 24px, var(--h) * 1.4115), 2600px);
   }
   @media (max-width: 699px), (max-height: 480px) {
     #stage {
       --h: calc(100vh - 7.4rem);
       --h: calc(100dvh - 7.4rem);
-      width: min(100vw - 24px, var(--h) * 0.7069, 599px);
+      width: min(100vw - 24px, var(--h) * 0.7058, 599px);
     }
   }
   #book { box-shadow: 0 12px 44px rgba(0, 0, 0, .55); }
@@ -127,9 +127,9 @@
   load(T - saved);
 
   var pf = new St.PageFlip(book, {
-    width: 1300, height: 1839,
+    width: 1300, height: 1842,
     size: "stretch",
-    minWidth: 300, maxWidth: 1300, minHeight: 424, maxHeight: 1839,
+    minWidth: 300, maxWidth: 1300, minHeight: 425, maxHeight: 1842,
     showCover: true,
     usePortrait: true,
     drawShadow: true, maxShadowOpacity: 0.4,

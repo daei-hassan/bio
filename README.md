@@ -43,7 +43,10 @@ changes. They come from the PDF.
 2. Run `tools/render_pages.sh` (needs `brew install poppler webp`).
 3. If the page count or the pages chapters start on have changed, update
    `PAGE_COUNT` and `CHAPTER_PAGES` at the top of `build.py`.
-4. Commit and push.
+4. If the wording changed, make the same changes in
+   `docs/text/zendegi-nameh-final.md`. The reading version is built from that
+   file, not from the PDF.
+5. Commit and push.
 
 ## Previewing on your own computer
 

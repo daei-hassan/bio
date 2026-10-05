@@ -18,8 +18,8 @@ OUT = ROOT / "_site"
 
 # Printed page each chapter starts on in the PDF, and the PDF's page count.
 # Used for chapter lengths in the contents and for chapter jumps in the flipbook.
-CHAPTER_PAGES = [4, 11, 25, 40, 43, 59, 62, 70]
-PAGE_COUNT = 101
+CHAPTER_PAGES = [5, 18, 46, 78, 84, 117, 122, 139]
+PAGE_COUNT = 204
 
 # Remove this line's content to let search engines list the site.
 ROBOTS = '<meta name="robots" content="noindex">'
@@ -94,15 +94,17 @@ def parse():
             current["lines"].append((no, line))
     sections.append(current)
 
-    front = [block for _, block in blocks(sections[0]["lines"])]
-    if len(front) != 4 or not front[0][0].startswith("# ") or len(front[1]) != 2:
-        fail(1, "expected: # title, subtitle<br> + years, **author**, *dedication*")
+    starts, front = zip(*blocks(sections[0]["lines"]))
+    if len(front) != 5 or not front[0][0].startswith("# ") or len(front[1]) != 3:
+        fail(1, "expected: # title, part<br> + subtitle<br> + years, **author**, *dedication*, *opening line*")
     book = {
         "title": front[0][0][2:].strip(),
-        "subtitle": inline(strip_br(front[1][0]), 3),
-        "years": inline(front[1][1], 4),
+        "part": inline(strip_br(front[1][0]), starts[1]),
+        "subtitle": inline(strip_br(front[1][1]), starts[1] + 1),
+        "years": inline(front[1][2], starts[1] + 2),
         "author": front[2][0].strip("*"),
-        "dedication": inline(front[3][0], 8),
+        "dedication": "<br>\n      ".join(inline(strip_br(line), starts[3]) for line in front[3]),
+        "opening": inline(front[4][0], starts[4]),
         "chapters": [],
     }
 
@@ -175,6 +177,7 @@ def index_page(book):
   <header class="sheet cover">
     <h1>{html.escape(book['title'])}</h1>
     {ORNAMENT}
+    <p class="part">{book['part']}</p>
     <p class="subtitle">{book['subtitle']}</p>
     <p class="years">{book['years']}</p>
     <p class="author">{html.escape(book['author'])}</p>
@@ -188,6 +191,10 @@ def index_page(book):
 
   <section class="sheet dedication">
     <p>{book['dedication']}</p>
+  </section>
+
+  <section class="sheet dedication">
+    <p>{book['opening']}</p>
   </section>
 
   <main class="sheet" id="fehrest">
