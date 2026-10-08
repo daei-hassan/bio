@@ -201,6 +201,32 @@ and carácter keep their c).
    `translation-names.md` lists them, with the spelling used and the
    alternatives.
 
+## The revised edition of 7 October 2026
+
+The author's revised PDF (93 pages, A4) replaced the first edition (204 pages,
+A5). The Persian Markdown was brought into line with it, and the translations
+were updated wherever the meaning changed.
+
+- **What changed in the Persian.** About 370 small changes in 206 paragraphs:
+  mostly spelling, word forms and spacing (ماهیانه for ماهانه, مسئولین for
+  مسئولان, به راحتی for به‌راحتی), about 35 changes of meaning, a new
+  dedication, one added clause in chapter 8 (line 796) and one partly
+  rewritten paragraph (line 966). No heading or paragraph was added or removed.
+- **How.** There is no text file behind the PDF, so its text was read out of
+  the PDF and compared with the Markdown word by word. Every difference was
+  either applied or set aside as a reading artefact.
+- **Followed exactly:** the author's words, spellings, word spacing and
+  punctuation, including Latin digits where he typed them (lines 966, 1014).
+- **Not followed:** three dots for the ellipsis character (line 606), straight
+  quotation marks for «…» (line 638), and stray spaces inside brackets. These
+  are typing habits, not wording.
+- **Could not be read reliably from the PDF:** vowel marks (the kasra of the
+  ezafe, tanvin, tashdid). Where a word is otherwise unchanged its marks were
+  kept as they were.
+- **Line numbers.** The dedication is one line now instead of four. Three blank
+  lines were left after it so that every later line keeps the number this file
+  and `translation-names.md` refer to. Do not remove them.
+
 ## Places where the Persian seems to slip
 
 Found while translating and second-reading. Line numbers are in
@@ -297,3 +323,27 @@ both translations.
 - 1056–1058: landing at 11:30, one to two hours of checks, a reunion of more
   than an hour from 1:45, and home by 2:30.
 - 87, 1058: "my brothers", plural, though one brother survived.
+
+### New in the revised edition
+
+Probable typing slips in the revised Persian. The Persian follows the PDF; the
+translations keep the sense the sentence had before, except where noted.
+
+- 237: «خانه‌ی کنار علوم تجربی و درس حرفه‌وفن را». The commas that named the
+  square as the vocational-studies one became «و», so it now reads "next to
+  sciences and vocational studies". The translations keep the old sense, which
+  is the one that fits the game.
+- 414: «به‌اجبار مجبور» says "forced" twice.
+- 556: a stray «آ» after «تتیس», and a full stop inside the bracket: «است.)،».
+- 712: «سالی که آغازش … آغاز شد» says "began" twice.
+- 764: «همراه بود» was removed, leaving «که با افتضاح سیاسی و موجب … شد»
+  without a verb for its first half.
+- 796: in the added clause, «با سفارت … اعلام نکرده بود» has «با» where «به»
+  is expected, and nothing separates it from «سفارت نیز».
+- 964: doubled punctuation at the end, «است.).».
+- 966: the rewritten paragraph has almost no punctuation or quotation marks,
+  Latin digits (78, 79), «مامور» and «ماموریت» without the hamza, and the
+  doubled «گذرگاه عبور عابران مشغول تردد بود».
+- 1010: «حل شود» for «حل شد». The translations still say the problem was
+  settled.
+- 1044: «جنگ دوم جهانی» here, «جنگ جهانی دوم» elsewhere.

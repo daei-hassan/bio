@@ -7,7 +7,7 @@ set -eu
 root="$(cd "$(dirname "$0")/.." && pwd)"
 pdf="$root/docs/text/fa/zendegi-nameh-final.pdf"
 out="$root/src/flip/pages"
-width=1300
+width=1600
 quality=78
 
 tmp="$(mktemp -d)"
