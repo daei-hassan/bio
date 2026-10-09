@@ -266,7 +266,7 @@ what is already fixed there, except where a later chapter uses a new Persian for
 
 | Persian | English | Portuguese | Who or what | First line |
 |---|---|---|---|---|
-| مرحوم مؤذن‌زاده‌اردبیلی | the late Moazzenzadeh Ardabili | o falecido Moazzenzadeh Ardabili | The muezzin whose recorded call to prayer every Iranian knows | 606 |
+| مرحوم مؤذن‌زاده اردبیلی | the late Moazzenzadeh Ardabili | o falecido Moazzenzadeh Ardabili | The muezzin whose recorded call to prayer every Iranian knows | 606 |
 | مائده / مائده‌جان | Maedeh / Maedeh-jan | same | Elder daughter, born 17 Bahman 1364. Line 606 plays on *maedeh-ye asemani*, "a table sent down from heaven" | 606 |
 | آقای پسندیده | Mr. Pasandideh | same | Landlord | 616 |
 | علی‌آقای فرش‌فروش | Ali Agha the carpet-seller | Ali Agha, o vendedor de tapetes | Landlord | 616 |
@@ -792,7 +792,7 @@ Alemanha, França, Espanha, Itália, Brasil, Canadá, Austrália.
 | فوکر ۱۰۰ | Fokker 100 | Fokker 100 | | 788 |
 | فیات اونو (Fiat Uno) | Fiat Uno | Fiat Uno | | 848 |
 | پراید | Pride | Pride | The Kia Pride, built in Iran | 848 |
-| سیتروئن مدل ساکسو | Citroën Saxo | Citroën Saxo | | 966 |
+| سیتروِن مدل ساکسو | Citroën Saxo | Citroën Saxo | | 966 |
 
 ## 4. Persian words used as terms
 

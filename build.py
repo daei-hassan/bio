@@ -23,8 +23,8 @@ EPUB = ROOT / "dist" / "zendegi-nameh-final.epub"
 
 # Printed page each chapter starts on in the PDF, and the PDF's page count.
 # Used for chapter lengths in the contents and for chapter jumps in the flipbook.
-CHAPTER_PAGES = [4, 10, 23, 37, 40, 54, 57, 65]
-PAGE_COUNT = 93
+CHAPTER_PAGES = [4, 12, 29, 48, 52, 72, 75, 85]
+PAGE_COUNT = 124
 
 # Remove this line's content to let search engines list the site.
 ROBOTS = '<meta name="robots" content="noindex">'

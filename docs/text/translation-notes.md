@@ -227,6 +227,35 @@ were updated wherever the meaning changed.
   lines were left after it so that every later line keeps the number this file
   and `translation-names.md` refer to. Do not remove them.
 
+## The edition of 9 October 2026 (17 Mehr 1405)
+
+The author's next PDF (124 pages, A4, larger type) replaced the 7 October one.
+The Persian Markdown was compared with it word by word in the same way and
+brought into line, and the translations were updated wherever the meaning or
+the sentence breaks changed.
+
+- **What changed in the Persian.** About 100 changes in 78 paragraphs. No
+  heading or paragraph was added or removed, so every line number is the same.
+  - Mostly spacing and spelling: joined words written apart (به هر حال for
+    به‌هرحال, حضور و غیاب for حضوروغیاب, عروس و داماد for عروس‌وداماد),
+    همچنین for هم‌چنین, خردادماه for خرداد ماه, the ezafe written out
+    (خانواده‌ی, راننده‌ی, جعبه‌ی), داوود for داود at line 536.
+  - A few changes of wording: «خوابیدیم» for «خوابیدم» (463), «همچنین» for
+    «هم‌چنان» (439), «افلیج» for «فلج» (950), «تهران» moved in front of the
+    bracket (227), «همین» removed (648), «این بود» added (966).
+  - Punctuation in about twenty paragraphs. Line 966, which had almost none,
+    now has full stops, commas and «…» around the three things said.
+  - Persian digits where the last edition had Latin ones (966, 1014).
+- **Translations.** English and Portuguese: "we slept" for "I slept" (463),
+  and the sentence breaks of 596, 640, 966 and 1026 now follow the Persian.
+  Portuguese only: «e» for the semicolon at 473. Everything else was either
+  spacing and spelling, or a sense the translations already had (227, 439,
+  648, 966, 1010).
+- **Could not be read reliably from the PDF,** as before: vowel marks. The
+  marks of لندروِر (259), اِرَم (400), بکسِل (658) and دِین (866) were kept. Two
+  words were read from the page image instead: «دووَنیم» (654, 682) and
+  «سیتروِن» (966, was سیتروئن).
+
 ## Places where the Persian seems to slip
 
 Found while translating and second-reading. Line numbers are in
@@ -327,23 +356,19 @@ both translations.
 ### New in the revised edition
 
 Probable typing slips in the revised Persian. The Persian follows the PDF; the
-translations keep the sense the sentence had before, except where noted.
+translations keep the sense the sentence had before, except where noted. The
+9 October edition corrected some of these; what is listed is what remains.
 
 - 237: «خانه‌ی کنار علوم تجربی و درس حرفه‌وفن را». The commas that named the
   square as the vocational-studies one became «و», so it now reads "next to
   sciences and vocational studies". The translations keep the old sense, which
   is the one that fits the game.
 - 414: «به‌اجبار مجبور» says "forced" twice.
-- 556: a stray «آ» after «تتیس», and a full stop inside the bracket: «است.)،».
+- 556: a full stop inside the bracket: «است.)،».
 - 712: «سالی که آغازش … آغاز شد» says "began" twice.
 - 764: «همراه بود» was removed, leaving «که با افتضاح سیاسی و موجب … شد»
   without a verb for its first half.
 - 796: in the added clause, «با سفارت … اعلام نکرده بود» has «با» where «به»
-  is expected, and nothing separates it from «سفارت نیز».
-- 964: doubled punctuation at the end, «است.).».
-- 966: the rewritten paragraph has almost no punctuation or quotation marks,
-  Latin digits (78, 79), «مامور» and «ماموریت» without the hamza, and the
-  doubled «گذرگاه عبور عابران مشغول تردد بود».
-- 1010: «حل شود» for «حل شد». The translations still say the problem was
-  settled.
+  is expected.
+- 966: the doubled «گذرگاه عبور عابران مشغول تردد بود».
 - 1044: «جنگ دوم جهانی» here, «جنگ جهانی دوم» elsewhere.
